@@ -1,14 +1,125 @@
 .gallery__wrapper {
-
-}
-
-.gallery {
-    height: 400px;
     width: 100%;
+    position: relative;
 
-    img {
-        max-width: 50%;
-        //max-height: 100%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/images/bg-figures.png');
+        background-size: cover;
+        background-position: 56% 24%;
+        background-repeat: repeat-x;
+        z-index: -1;
+        opacity: 1;
     }
 }
 
+.gallery {
+    .container();
+}
+
+.gallery__inner {
+    .row();
+}
+
+.gallery__content {
+    .col(sm, 12);
+    padding: 0 !important;
+}
+
+.gallery__slick {
+    position: relative;
+    cursor: pointer;
+
+    img {
+        height: 400px;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid @text-color-hover;
+    z-index: 999;
+    background: @white !important;
+    border-radius: 50%;
+    top: auto;
+    bottom: 0;
+    transform: translateY(50%);
+
+    &:hover {
+        background: @white !important;
+    }
+}
+
+.slick-prev {
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-top: 2px solid @text-color-hover;
+        border-left: 2px solid @text-color-hover;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        opacity: 1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: @text-color-hover;
+    }
+}
+
+.slick-next {
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-top: 2px solid @text-color-hover;
+        border-left: 2px solid @text-color-hover;
+        transform: translate(-50%, -50%) rotate(135deg);
+        opacity: 1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: @text-color-hover;
+    }
+}
+
+.slick-active {
+
+    &:first-child {
+        img {
+            padding-right: 15px;
+        }
+    }
+}
