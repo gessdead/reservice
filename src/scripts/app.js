@@ -2,15 +2,44 @@ define('app', [
     'jquery'
 ], function ($) {
 
-    (function($testFunc) {
-        if (!$testFunc) {
+    // service tabs
+    (function($serviceTab) {
+        if (!$serviceTab.length) {
             return;
         }
-        
-        $testFunc.on('click', function() {
-            console.log('require test done');
+
+        var $link = $serviceTab; //ссылка
+        var $tab = $('.service__content'); //контент
+
+        $link.on('click', function(e) {
+            var $self = $(this);
+            var index = $self.index();
+
+            e.preventDefault();
+
+            if (!$self.hasClass('is-active')) {
+                $link.removeClass('is-active');
+                $self.addClass('is-active');
+                $tab.hide();
+                $tab.eq(index).fadeIn();
+            }
+
         });
-    })($('.b-icon__camera'));
+    })($('.j-service-tab'));
+
+    //gallery
+    (function ($gallery) {
+        if (!$gallery) {
+            return
+        }
+
+        require(['slick'], function () {
+            $gallery.slick({
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        });
+    })($('.j-gallery'));
 
     return {};
 });

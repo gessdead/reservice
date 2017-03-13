@@ -1,0 +1,18 @@
+.page-nav__wrapper
+    nav.page-nav
+        .page-nav__inner
+            ul.page-nav__list
+                -
+                    var menu = [
+                    'О нас',
+                    'Наши услуги',
+                    'Ваши выгоды',
+                    'Примеры работ',
+                    'Цены',
+                    'Контакты'
+                    ]
+                each item in menu
+                    li.page-nav__item
+                        a.page-nav__link=  item
+            .page-nav__phone
+                a(href='tel:+78123803496') 8 (812) 380 34 96

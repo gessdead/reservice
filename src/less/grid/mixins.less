@@ -4,31 +4,11 @@
 
 .container() {
   display: block;
-  width: 100%;
+  width: @container-md;
   margin-left: auto;
   margin-right: auto;
   padding-left: (@grid-gutter-width / 2);
   padding-right: (@grid-gutter-width / 2);
-
-  @media (min-width: @screen-sm) {
-    width: @container-sm;
-  }
-
-  @media (min-width: @screen-md) {
-    width: @container-md;
-  }
-
-  @media (min-width: @screen-lg) {
-    width: @container-lg;
-  }
-
-  @media (min-width: @screen-xl) {
-    width: @container-xl;
-  }
-
-  @media (min-width: @screen-xxl) {
-    width: @container-xxl;
-  }
 }
 
 
@@ -50,46 +30,8 @@
 .row(@xs-grid-gutter: @grid-gutter-width; @sm-grid-gutter: @grid-gutter-width; @md-grid-gutter: @grid-gutter-width; @lg-grid-gutter: @grid-gutter-width; @xl-grid-gutter: @grid-gutter-width; @xxl-grid-gutter: @grid-gutter-width;) {
   display: flex;
   flex-wrap: wrap;
-
-  & when not (@xs-grid-gutter = false) {
-    margin-left:  (@xs-grid-gutter / -2);
-    margin-right: (@xs-grid-gutter / -2);
-  }
-
-  & when not (@sm-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-sm) {
-      margin-left:  (@sm-grid-gutter / -2);
-      margin-right: (@sm-grid-gutter / -2);
-    }
-  }
-
-  & when not (@md-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-md) {
-      margin-left:  (@md-grid-gutter / -2);
-      margin-right: (@md-grid-gutter / -2);
-    }
-  }
-
-  & when not (@lg-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-lg) {
-      margin-left:  (@lg-grid-gutter / -2);
-      margin-right: (@lg-grid-gutter / -2);
-    }
-  }
-
-  & when not (@xl-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-xl) {
-      margin-left:  (@xl-grid-gutter / -2);
-      margin-right: (@xl-grid-gutter / -2);
-    }
-  }
-
-  & when not (@xxl-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-xxl) {
-      margin-left:  (@xxl-grid-gutter / -2);
-      margin-right: (@xxl-grid-gutter / -2);
-    }
-  }
+  margin-left:  (@sm-grid-gutter / -2);
+  margin-right: (@sm-grid-gutter / -2);
 }
 
 
@@ -158,21 +100,6 @@
   }
   & when (@screen = md) {
     @media (min-width: @screen-md) {
-      .make-col(@column, @columns, @gutter);
-    }
-  }
-  & when (@screen = lg) {
-    @media (min-width: @screen-lg) {
-      .make-col(@column, @columns, @gutter);
-    }
-  }
-  & when (@screen = xl) {
-    @media (min-width: @screen-xl) {
-      .make-col(@column, @columns, @gutter);
-    }
-  }
-  & when (@screen = xxl) {
-    @media (min-width: @screen-xxl) {
       .make-col(@column, @columns, @gutter);
     }
   }

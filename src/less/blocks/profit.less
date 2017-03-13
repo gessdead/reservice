@@ -1,0 +1,41 @@
+.profit {
+    margin-top: 80px;
+}
+
+.profit__list {
+    .row();
+}
+
+.profit__item {
+    width: calc(~'25% - 30px');
+    margin: 0 15px;
+    background-color: @bg-color-dark;
+    text-align: center;
+    position: relative;
+}
+
+.profit__icon {
+    .top-abs();
+    background-color: @white;
+    padding: 40px;
+    border-radius: 50%;
+}
+
+.profit__info {
+    padding: 70px 25px 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.profit__title {
+    font-size: @base-fsz + 2;
+    text-transform: uppercase;
+    color: @text-color-profit;
+    align-self: center;
+}
+
+.profit__descr {
+    font-size: @base-fsz + 2;
+    color: @text-color-dark;
+}

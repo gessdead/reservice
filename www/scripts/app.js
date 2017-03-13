@@ -1,1 +1,1 @@
-define("app",["jquery"],function(n){return function(n){n&&n.on("click",function(){console.log("require test done")})}(n(".b-icon__camera")),{}});
+define("app",["jquery"],function(e){return function(i){if(i.length){var n=i,s=e(".service__content");n.on("click",function(i){var c=e(this),t=c.index();i.preventDefault(),c.hasClass("is-active")||(n.removeClass("is-active"),c.addClass("is-active"),s.hide(),s.eq(t).fadeIn())})}}(e(".j-service-tab")),function(e){e&&require(["slick"],function(){e.slick({slidesToShow:2,slidesToScroll:1})})}(e(".j-gallery")),{}});

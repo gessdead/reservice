@@ -2,15 +2,17 @@ doctype html
 html(lang='en')
     head
         meta(charset='UTF-8')
+        meta(name='viewport', content='width=1200px')
         link(rel='stylesheet', href='/styles/app.css')
 
         block title
             title Заголовок
     body
-        include _mixins/all-mixins
-        header
-            include _blocks/header
+        include ../../www/svg/sprite.svg
+
+        //header
+        include _blocks/header
+        include _blocks/nav.pug
         main
             block content
-        include ../../www/svg/sprite.svg
         script(src='/scripts/lib/requirejs/require.js' data-main="/scripts/config.js")

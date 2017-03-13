@@ -49,7 +49,8 @@ var files = {
     styles: paths.styles.src + 'style.less',
     scripts: paths.scripts.src + '**/*.js',
     html: paths.html.src + '**/*.pug',
-    svg: paths.svg.src + '**/*.svg'
+    svg: paths.svg.src + '**/*.svg',
+    images: paths.images.src + '**/*.*'
 };
 
 //build
@@ -58,7 +59,8 @@ gulp.task('build', [
     'less',
     'svg-sprite',
     'pug',
-    'js'
+    'js',
+    'images'
 ]);
 
 
@@ -121,6 +123,11 @@ gulp.task('svg-sprite', function() {
         .pipe(gulp.dest(paths.svg.dest));
 });
 
+gulp.task('images', function () {
+    gulp.src(files.images)
+    .pipe(gulp.dest(paths.images.dest));
+});
+
 // деплоер на github.io
 gulp.task('deploy', function () {
     return gulp.src(basePaths.dest + '/**/*')
@@ -150,4 +157,5 @@ gulp.task('watch', ['less'], function () {
     gulp.watch(files.scripts, ['js']);
     gulp.watch(files.svg, ['svg-sprite']);
     gulp.watch(files.html, ['pug']);
+    gulp.watch(files.images, ['images']);
 });

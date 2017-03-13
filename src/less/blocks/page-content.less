@@ -1,0 +1,33 @@
+.page-content {
+    .container();
+}
+
+.page-content__about,
+.page-content__service,
+.page-content__profit {
+    .row();
+    flex-flow: column nowrap;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+
+.page-content__profit {
+    padding: 0;
+}
+
+.page-content__title {
+    .slash();
+    color: @text-color-dark;
+    text-transform: uppercase;
+    font-size: @base-fsz * 2 - 2;
+}
+
+.page-content__text {
+    font-size: @base-fsz + 2;
+    line-height: 30px;
+    color: @text-color-dark;
+
+    p {
+        margin: 0;
+    }
+}
