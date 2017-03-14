@@ -135,7 +135,13 @@ gulp.task('deploy', function () {
 });
 
 // запуск браузерсинка + компилятора less
-gulp.task('watch', ['less'], function () {
+gulp.task('watch', [
+    'less',
+    'svg-sprite',
+    'pug',
+    'js',
+    'images'
+], function () {
 
     if (argvs.dev) {
         browserSync.init({
