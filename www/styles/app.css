@@ -836,6 +836,7 @@ body {
   box-sizing: border-box;
 }
 .btn {
+  transition: ease-in-out 0.2s;
   text-transform: uppercase;
   font-size: 18px;
   color: #fff;
@@ -843,6 +844,12 @@ body {
   padding: 15px 60px;
   border-radius: 30px;
   cursor: pointer;
+}
+.btn:hover {
+  background-color: #e01a00;
+}
+.btn_padding_side-30 {
+  padding: 15px 30px;
 }
 .page-header {
   display: block;
@@ -1020,7 +1027,8 @@ body {
 .page-content__about,
 .page-content__service,
 .page-content__profit,
-.page-content__gallery {
+.page-content__gallery,
+.page-content__clients {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1173,6 +1181,7 @@ body {
 .gallery__wrapper {
   width: 100%;
   position: relative;
+  margin-bottom: 100px;
 }
 .gallery__wrapper::after {
   content: '';
@@ -1279,6 +1288,28 @@ body {
 }
 .slick-active:first-child img {
   padding-right: 15px;
+}
+.clients {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.clients__list {
+  margin: 0 -25px 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+.clients__item {
+  margin: 0 25px;
+}
+.clients__btn {
+  text-align: center;
+  width: 100%;
 }
 @media (min-width: 768px){
   .col-sm-1{

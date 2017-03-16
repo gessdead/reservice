@@ -1,4 +1,5 @@
 .btn {
+    .ease200();
     text-transform: uppercase;
     font-size: @base-fsz + 2;
     color: @white;
@@ -6,4 +7,12 @@
     padding: 15px 60px;
     border-radius: 30px;
     cursor: pointer;
+
+    &:hover {
+        background-color: @btn-hover;
+    }
+}
+
+.btn_padding_side-30 {
+    padding: 15px 30px;
 }
