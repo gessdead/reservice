@@ -1028,13 +1028,15 @@ body {
 .page-content__service,
 .page-content__profit,
 .page-content__gallery,
-.page-content__clients {
+.page-content__clients,
+.page-content__contacts {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  position: relative;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   padding: 0 15px;
@@ -1310,6 +1312,21 @@ body {
 .clients__btn {
   text-align: center;
   width: 100%;
+}
+.contacts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.contacts__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 750px;
+  height: 460px;
 }
 @media (min-width: 768px){
   .col-sm-1{

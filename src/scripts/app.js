@@ -1,5 +1,6 @@
 define('app', [
-    'jquery'
+    'jquery',
+
 ], function ($) {
 
     // service tabs
@@ -40,6 +41,8 @@ define('app', [
             });
         });
     })($('.j-gallery'));
+
+    require(['map']);
 
     return {};
 });
