@@ -1,1 +1,1 @@
-var keyMap="AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag";require.config({baseUrl:"scripts/lib",urlArgs:"v1",paths:{app:"../app",jquery:"jquery/dist/jquery.min",slick:"slick-carousel/slick/slick.min","magnific-popup":"magnific-popup/dist/jquery.magnific-popup.min"},deps:["app"]});
+var keyMap="AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag";require.config({baseUrl:"scripts/lib",urlArgs:"v2",paths:{app:"../app",jquery:"jquery/dist/jquery.min",slick:"slick-carousel/slick/slick.min","magnific-popup":"magnific-popup/dist/jquery.magnific-popup.min"},deps:["app"]});

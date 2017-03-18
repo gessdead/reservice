@@ -1388,7 +1388,7 @@ body {
   left: 0;
   width: 47px;
   height: 58px;
-  background-image: url('/images/slash.png');
+  background-image: url('../images/slash.png');
 }
 .page-content__text {
   font-size: 18px;
