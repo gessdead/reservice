@@ -109,5 +109,33 @@ define('app', [
         });
     })($('.j-map'));
 
+    (function ($easyScroll) {
+        if (!$easyScroll) {
+            return;
+        }
+
+        $easyScroll.on('click', function () {
+            console.log('yep');
+            elem = $(this).attr('href');
+            console.log(elem);
+            dest = $(elem).offset().top - 30;
+            console.log(dest);
+            $('body').animate({
+                scrollTop: dest
+            }, 1000);
+        });
+
+    })($('.j-nav'));
+
+    (function ($popup) {
+        if (!$popup) {
+            return;
+        }
+
+        require(['magnific-popup'], function () {
+            $popup.magnificPopup();
+        });
+    })($('.j-popup'));
+
     return {};
 });

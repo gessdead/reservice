@@ -9,7 +9,9 @@ require.config({
         app: '../app',
 
         jquery: 'jquery/dist/jquery.min',
-        slick: 'slick-carousel/slick/slick.min'
+        slick: 'slick-carousel/slick/slick.min',
+        'magnific-popup': 'magnific-popup/dist/jquery.magnific-popup.min'
     },
+
     deps: ['app']
 });

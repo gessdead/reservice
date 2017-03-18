@@ -22,12 +22,12 @@
       <nav class="page-nav">
         <div class="page-nav__inner">
           <ul class="page-nav__list">
-            <li class="page-nav__item"><a class="page-nav__link">О нас</a></li>
-            <li class="page-nav__item"><a class="page-nav__link">Наши услуги</a></li>
-            <li class="page-nav__item"><a class="page-nav__link">Ваши выгоды</a></li>
-            <li class="page-nav__item"><a class="page-nav__link">Примеры работ</a></li>
-            <li class="page-nav__item"><a class="page-nav__link">Цены</a></li>
-            <li class="page-nav__item"><a class="page-nav__link">Контакты</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#about">о нас</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#service">наши услуги</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#profit">ваши выгоды</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#gallery">примеры работ</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#prices">цены</a></li>
+            <li class="page-nav__item"><a class="page-nav__link j-nav" href="#contacts">контакты</a></li>
           </ul>
           <div class="page-nav__phone"><a href="tel:+78123803496">8 (812) 380 34 96</a></div>
         </div>
@@ -39,13 +39,13 @@
           <div class="promo-block__img"><img src="/images/promo.png"></div>
           <div class="promo-block__info">
             <h1 class="promo-block__title">Ремонт рекламных вывесок за&nbsp;1-2&nbsp;дня</h1>
-            <div class="promo-block__btn"><a class="btn">Заказать</a></div>
+            <div class="promo-block__btn"><a class="btn j-popup" href="#callback">Заказать</a></div>
           </div>
         </div>
       </div>
       <section class="page-content">
         <div class="page-content__about">
-          <h2 class="page-content__title">О нас</h2>
+          <h2 class="page-content__title" id="about">О нас</h2>
           <div class="page-content__text">
             <p>Мы занимаемся оказанием услуг по ремонту и техническому обслуживанию вывесок.</p>
             <p>Мы обладаем высококвалифицированным персоналом, имеющим большой опыт работы в различных сегментах наружной рекламы.</p>
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="page-content__service">
-          <h2 class="page-content__title">Наши услуги</h2>
+          <h2 class="page-content__title" id="service">Наши услуги</h2>
           <div class="service">
             <div class="service__inner">
               <div class="service__tabs">
@@ -103,7 +103,7 @@
           </div>
         </div>
         <div class="page-content__profit">
-          <h2 class="page-content__title">Ваши выгоды</h2>
+          <h2 class="page-content__title" id="profit">Ваши выгоды</h2>
           <div class="profit">
             <ul class="profit__list">
               <li class="profit__item">
@@ -154,7 +154,7 @@
           </div>
         </div>
         <div class="page-content__gallery">
-          <h2 class="page-content__title">Примеры работ</h2>
+          <h2 class="page-content__title" id="gallery">Примеры работ</h2>
         </div>
       </section>
       <div class="gallery__wrapper">
@@ -179,8 +179,93 @@
             <div class="clients__btn"><a class="btn btn_padding_side-30">Стать клиентом</a></div>
           </div>
         </div>
+        <div class="page-content__pricelist">
+          <h2 class="page-content__title" id="prices">Наши цены</h2>
+          <div class="pricelist">
+            <div class="pricelist__inner">
+              <div class="pricelist__tabs">
+                <li class="pricelist__tabs-item">Основные услуги</li>
+              </div>
+              <div class="pricelist__content">
+                <table class="pricelist__content-table">
+                  <tr>
+                    <td>Выезд сервисной бригады (2 чел) на объект. (СПб. В пределах КАД)</td>
+                    <td>1 выезд</td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Работа сервисной бригады (2 чел) на объекте. (СП-б. В пределах КАД)</td>
+                    <td>1 час</td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Выезд сервисной бригады (2 чел) на объект за пределы КАД</td>
+                    <td>1 км</td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Мойка вывески до 30 м<sup>2</sup> (включая стоимость выезда бригады)</td>
+                    <td>ШТ</td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Мойка вывески более 30 м<sup>2</sup></td>
+                    <td>1 м<sup>2</sup></td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Работы по восстановлению конструкций в условиях мастерской</td>
+                    <td>1 чел/час</td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Хранение вывески в месяц (первые 2 недели – бесплатно)</td>
+                    <td>1 м<sup>2</sup></td>
+                    <td>2500 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>Утилизация рекламных конструкций</td>
+                    <td>1 м<sup>2</sup></td>
+                    <td>2500 ₽</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div><br>
+          <div class="pricelist">
+            <div class="pricelist__inner">
+              <div class="pricelist__tabs">
+                <li class="pricelist__tabs-item normal-caps">Коэффициенты на основные услуги</li>
+              </div>
+              <div class="pricelist__content">
+                <table class="pricelist__content-table">
+                  <tr>
+                    <td>Повышающий коэффициент за выезд и работу бригады в ночное время,<br/> выходные и праздничные дни</td>
+                    <td>1,5</td>
+                  </tr>
+                  <tr>
+                    <td>Повышающий коэффициент за выполнение срочных работ<br/>(прибытие бригады на объект в срок, до 5 часов с момента получения заявки)</td>
+                    <td>1,5</td>
+                  </tr>
+                  <tr>
+                    <td>Повышающий коэффициент за выполнение работ<br/> бригадой альпинистов (2 чел.)</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Понижающий коэффициент за увеличенный срок выполнения заявки <br/> без фиксированной даты и времени (до 2х недель с момента получения заявки)</td>
+                    <td>0,9</td>
+                  </tr>
+                  <tr>
+                    <td>Понижающий коэффициент за предварительную оплату работ</td>
+                    <td>0,9</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="page-content__contacts">
-          <h2 class="page-content__title">Контакты</h2>
+          <h2 class="page-content__title" id="contacts">Контакты</h2>
           <div class="contacts">
             <div class="contacts__info">
               <div class="contacts__info-item">
@@ -201,6 +286,9 @@
         </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <p>© 2017 Ре-сервис. Все права защищены</p>
+    </footer>
     <script src="/scripts/lib/requirejs/require.js" data-main="/scripts/config.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag"></script>
   </body>

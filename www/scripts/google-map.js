@@ -1,0 +1,1 @@
+define("google-map",["async!https://maps.googleapis.com/maps/api/js?key=AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag"],function(){"use strict";return window.google});

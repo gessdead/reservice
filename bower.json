@@ -8,7 +8,8 @@
   "license": "ISC",
   "homepage": "https://github.com/gessdead/__fast_start",
   "devDependencies": {
-    "requirejs": "latest"
+    "requirejs": "latest",
+    "magnific-popup": "^1.1.0"
   },
   "dependencies": {
     "slick-carousel": "^1.6.0"
