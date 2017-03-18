@@ -413,6 +413,9 @@ li {
   padding: 0;
   margin: 0;
 }
+button {
+  border: none;
+}
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1159,6 +1162,7 @@ body {
   text-decoration: none;
   text-align: center;
   font-size: 18px;
+  outline: 0;
   color: #fff;
   background-color: #fd3419;
   padding: 15px 0;
@@ -1721,6 +1725,60 @@ body {
 .page-footer p {
   margin: 0;
   padding: 40px 0;
+}
+.callback {
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+}
+.callback:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid #ff4128;
+  z-index: -1;
+}
+.callback__inner .mfp-close {
+  color: #ff4128;
+}
+.callback__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.callback__row {
+  margin-bottom: 30px;
+}
+.callback__row label {
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.callback__row input {
+  padding: 5px;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid #676767;
+  transition: ease-in-out 0.2s;
+}
+.callback__row input:focus {
+  border-bottom: 2px solid #ff4128;
+}
+.callback__success {
+  display: none;
 }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){
   /**

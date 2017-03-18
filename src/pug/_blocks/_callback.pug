@@ -1,0 +1,18 @@
+#callback.callback.mfp-hide
+    .callback__inner
+        form.callback__form.j-form
+            h2.callback__ttl Заполните форму
+            .callback__row
+                label(for='name') Ваше имя
+                input(type='text' name='name' id='name')
+            .callback__row
+                label(for='phone') Ваш телефон
+                input(type='tel' name='phone' id='phone')
+            .callback__row
+                label(for='email') Ваша почта
+                input(type='email' name='email' id='email')
+            .callback__row
+                //button(type='submit').btn.j-form-btn Заказать звонок
+                a.btn.j-form-btn Заказать звонок
+        .callback__success.j-form-success
+            h2.callback__ttl Спасибо, заявка отправлена, наш менеджер свяжется с вами в ближайшее время.

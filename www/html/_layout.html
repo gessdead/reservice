@@ -33,11 +33,39 @@
         </div>
       </nav>
     </div>
+    <!--main-->
     <main>
     </main>
+    <!--footer-->
     <footer class="page-footer">
       <p>© 2017 Ре-сервис. Все права защищены</p>
     </footer>
+    <!--callback-->
+    <div class="callback mfp-hide" id="callback">
+      <div class="callback__inner">
+        <form class="callback__form j-form">
+          <h2 class="callback__ttl">Заполните форму</h2>
+          <div class="callback__row">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="callback__row">
+            <label for="phone">Ваш телефон</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="callback__row">
+            <label for="email">Ваша почта</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="callback__row">
+            <!--button(type='submit').btn.j-form-btn Заказать звонок--><a class="btn j-form-btn">Заказать звонок</a>
+          </div>
+        </form>
+        <div class="callback__success j-form-success">
+          <h2 class="callback__ttl">Спасибо, заявка отправлена, наш менеджер свяжется с вами в ближайшее время.</h2>
+        </div>
+      </div>
+    </div>
     <script src="/scripts/lib/requirejs/require.js" data-main="/scripts/config.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag"></script>
   </body>

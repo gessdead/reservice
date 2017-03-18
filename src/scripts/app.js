@@ -137,5 +137,17 @@ define('app', [
         });
     })($('.j-popup'));
 
+    (function ($form) {
+        if (!$form) {
+            return;
+        }
+
+        $form.on('click', function () {
+           $('.j-form').hide();
+           $('.j-form-success').show();
+        });
+
+    })($('.j-form-btn'));
+
     return {};
 });

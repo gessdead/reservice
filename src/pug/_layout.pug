@@ -13,8 +13,12 @@ html(lang='en')
         //header
         include _blocks/header
         include _blocks/nav.pug
+        //main
         main
             block content
+        //footer
         include _blocks/footer
+        //callback
+        include _blocks/_callback
         script(src='/scripts/lib/requirejs/require.js' data-main="/scripts/config.js")
         script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag')
