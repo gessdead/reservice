@@ -1,4 +1,24 @@
 .contacts
     .contacts__info
-    .contacts__map
-        #map
+        .contacts__info-item
+            p Почта:
+                a(href='mailto:zakaz@re-service24.ru')
+                    span  zakaz@re-service24.ru
+        .contacts__info-item
+            p Телефон:
+                br
+                a(href='tel:+78123803496')
+                    span 8 (812) 380 34 96
+        .contacts__info-item
+            p Адрес:
+                span
+                    br
+                    | Ре-сервис
+                    br
+                    | Россия, г. Санкт-Петербург
+                    br
+                    | Набережная реки Волковки, 17
+        .contacts__info-item
+            a.btn заказать звонок
+    .contacts__map.j-map
+        #map(style="height: 100%")

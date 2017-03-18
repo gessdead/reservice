@@ -1,1 +1,1 @@
-define("map",["jquery"],function(e){return require(["google-map"],function(){}),{}});
+define(["jquery","google-map"],function(e){return{}});
