@@ -104,8 +104,8 @@ define('app', [
 
         var marker = new google.maps.Marker({
             position: myLatLng,
-            map: map,
-            icon: '/images/map-marker.png'
+            map: map
+            //icon: '/images/map-marker.png'
         });
     })($('.j-map'));
 

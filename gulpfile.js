@@ -130,7 +130,7 @@ gulp.task('images', function () {
 
 // деплоер на github.io
 gulp.task('deploy', function () {
-    return gulp.src(basePaths.dest + '/**/*')
+    return gulp.src('./' + basePaths.dest + '/**/*')
         .pipe(ghPages());
 });
 

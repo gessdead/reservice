@@ -1,7 +1,7 @@
 var keyMap = 'AIzaSyDEDuZpHPwjPIJDvZIOW2QnESfn9ofVqag';
 
 require.config({
-    baseUrl: '/scripts/lib',
+    baseUrl: 'scripts/lib',
 
     urlArgs: 'v1',
 

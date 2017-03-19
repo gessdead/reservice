@@ -3,13 +3,23 @@
 }
 
 .clients__list {
-    margin: 0 -25px 60px;
+    margin: 0 -42px 60px;
     display: flex;
     flex-flow: row nowrap;
 }
 
 .clients__item {
-    margin: 0 25px;
+    margin: 0 42px;
+
+    img {
+        max-width: 100%;
+        filter: grayscale(100%);
+        .ease200();
+
+        &:hover {
+            filter: none;
+        }
+    }
 }
 
 .clients__btn {
