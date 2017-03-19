@@ -1145,7 +1145,7 @@ img.mfp-img {
   left: 0;
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -1282,7 +1282,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/bg-figures.png');
+  background-image: url('/images/bg-figures.png');
   background-size: 150%;
   background-position: 56% 24%;
   background-repeat: no-repeat;
@@ -1328,7 +1328,7 @@ body {
   content: '';
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
   position: absolute;
 }
 .promo-block__title::before {
@@ -1388,7 +1388,7 @@ body {
   left: 0;
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
 }
 .page-content__text {
   font-size: 18px;
@@ -1517,7 +1517,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/bg-figures.png');
+  background-image: url('/images/bg-figures.png');
   background-size: cover;
   background-position: 56% 24%;
   background-repeat: repeat-x;
@@ -1625,14 +1625,22 @@ body {
   margin-right: -15px;
 }
 .clients__list {
-  margin: 0 -25px 60px;
+  margin: 0 -42px 60px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
 }
 .clients__item {
-  margin: 0 25px;
+  margin: 0 42px;
+}
+.clients__item img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: ease-in-out 0.2s;
+}
+.clients__item img:hover {
+  filter: none;
 }
 .clients__btn {
   display: -ms-flexbox;
