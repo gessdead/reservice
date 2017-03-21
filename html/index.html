@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1200">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/styles/app.css">
     <title>Mainpage</title>
   </head>
@@ -10,11 +27,10 @@
     <!--header-->
     <header class="page-header">
       <div class="page-header__inner">
-        <div class="page-header__logo">
-              <svg class="b-icon__logo">
-                <use xlink:href="#logo"></use>
-              </svg>
-        </div>
+        <div class="page-header__logo"><a href="/">
+                <svg class="b-icon__logo">
+                  <use xlink:href="#logo"></use>
+                </svg></a></div>
         <div class="page-header__slogan">Техническое обслуживание рекламных конструкций</div>
       </div>
     </header>
@@ -64,6 +80,7 @@
                   <li class="service__tabs-item j-service-tab is-active">Ремонт</li>
                   <li class="service__tabs-item j-service-tab">Диагностика</li>
                   <li class="service__tabs-item j-service-tab">Мойка</li>
+                  <li class="service__tabs-item j-service-tab">Реновация</li>
                 </ul>
               </div>
               <div class="service__content is-active">
@@ -88,7 +105,8 @@
                   наши специалисты проводят диагностику.
                   Это позволяет оценить затраты на ремонт рекламной
                   конструкции, и определить количество времени, которое уйдет на восстановление наружной рекламы.
-                  
+                  <br/>
+                  Комплектация бригад позволяет устранять наиболее распространенные виды поломок при диагностике, что позволяет сэкономить Ваши время и средства.
                 </p>
               </div>
               <div class="service__content">
@@ -98,6 +116,22 @@
                   а также другие профилактические и ремонтные работы.
                   Мойка вывесок и витрин с применением данного оборудования обеспечивает максимальное качество
                   очистки поверхностей при минимальных сроках и затратах на мойку.
+                </p>
+              </div>
+              <div class="service__content">
+                <h2 class="page-content__title">Сезонная или Капитальная с разборкой конструкции.</h2>
+                <p class="page-content__text">
+                  В целях экономии, в ряде случаев,
+                  не имеет смысла изготавливать полностью новую вывеску,
+                  в замен устаревшей, либо поврежденной. Достаточно произвести реновацию вывески,
+                  как правило, включающую в себя:
+                  замену электрооборудования вывески;
+                  восстановление лицевой поверхности вывески;
+                  очистку и покраску металлоконструкций;
+                  проверку и подтяжку крепежных элементов.
+                  Проведение реновации, приводит вывеску в состояние «как новая» и
+                  при этом обходится для Вас в разы дешевле изготовления новой вывески.
+                  Таким образом Ваша вывеска прослужит еще несколько лет.
                 </p>
               </div>
             </div>
@@ -162,7 +196,7 @@
         <div class="gallery">
           <div class="gallery__inner">
             <div class="gallery__content">
-              <div class="gallery__slick j-gallery"><img src="/images/gallery/1.jpg"><img src="/images/gallery/2.jpg"><img src="/images/gallery/3.jpg"><img src="/images/gallery/4.jpg"></div>
+              <div class="gallery__slick j-gallery"><img src="/images/gallery/1-1.jpg"><img src="/images/gallery/1-2.jpg"><img src="/images/gallery/2-1.jpg"><img src="/images/gallery/2-2.jpg"><img src="/images/gallery/3-1.jpg"><img src="/images/gallery/3-2.jpg"><img src="/images/gallery/4-1.jpg"><img src="/images/gallery/4-2.jpg"><img src="/images/gallery/5-1.jpg"><img src="/images/gallery/5-2.jpg"><img src="/images/gallery/6-1.jpg"><img src="/images/gallery/6-2.jpg"><img src="/images/gallery/7-1.jpg"><img src="/images/gallery/7-2.jpg"><img src="/images/gallery/8-1.jpg"><img src="/images/gallery/8-2.jpg"></div>
             </div>
           </div>
         </div>
@@ -171,11 +205,11 @@
         <div class="page-content__clients">
           <div class="clients">
             <div class="clients__list">
-              <div class="clients__item"><img src="/images/clients/glavstroy.png"></div>
-              <div class="clients__item"><img src="/images/clients/glavstroy.png"></div>
-              <div class="clients__item"><img src="/images/clients/glavstroy.png"></div>
-              <div class="clients__item"><img src="/images/clients/glavstroy.png"></div>
-              <div class="clients__item"><img src="/images/clients/glavstroy.png"></div>
+              <div class="clients__item"><img src="/images/clients/magnit.png"></div>
+              <div class="clients__item"><img src="/images/clients/rainbow-smile.png"></div>
+              <div class="clients__item"><img src="/images/clients/globex.png"></div>
+              <div class="clients__item"><img src="/images/clients/doritis.png"></div>
+              <div class="clients__item"><img src="/images/clients/opt-roznica.png"></div>
             </div>
             <div class="clients__btn"><a class="btn btn_padding_side-30 j-popup" href="#callback">Стать клиентом</a></div>
           </div>
@@ -197,37 +231,37 @@
                   <tr>
                     <td>Работа сервисной бригады (2 чел) на объекте. (СП-б. В пределах КАД)</td>
                     <td>1 час</td>
-                    <td>2500 ₽</td>
+                    <td>1700 ₽</td>
                   </tr>
                   <tr>
                     <td>Выезд сервисной бригады (2 чел) на объект за пределы КАД</td>
                     <td>1 км</td>
-                    <td>2500 ₽</td>
+                    <td>35 ₽</td>
                   </tr>
                   <tr>
                     <td>Мойка вывески до 30 м<sup>2</sup> (включая стоимость выезда бригады)</td>
                     <td>ШТ</td>
-                    <td>2500 ₽</td>
+                    <td>5500 ₽</td>
                   </tr>
                   <tr>
                     <td>Мойка вывески более 30 м<sup>2</sup></td>
                     <td>1 м<sup>2</sup></td>
-                    <td>2500 ₽</td>
+                    <td>200 ₽</td>
                   </tr>
                   <tr>
                     <td>Работы по восстановлению конструкций в условиях мастерской</td>
                     <td>1 чел/час</td>
-                    <td>2500 ₽</td>
+                    <td>800 ₽</td>
                   </tr>
                   <tr>
                     <td>Хранение вывески в месяц (первые 2 недели – бесплатно)</td>
                     <td>1 м<sup>2</sup></td>
-                    <td>2500 ₽</td>
+                    <td>600 ₽</td>
                   </tr>
                   <tr>
                     <td>Утилизация рекламных конструкций</td>
                     <td>1 м<sup>2</sup></td>
-                    <td>2500 ₽</td>
+                    <td>300 ₽</td>
                   </tr>
                 </table>
               </div>

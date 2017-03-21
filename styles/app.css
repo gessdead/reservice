@@ -1199,6 +1199,9 @@ body {
   width: calc(40% - 15px);
   padding-left: 15px;
 }
+.page-header__logo a {
+  cursor: pointer;
+}
 .page-header__slogan {
   width: calc(60% - 15px);
   font-size: 24px;
@@ -1432,15 +1435,8 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: ease-in-out 0.2s;
-  z-index: 2;
-}
-.service__tabs-item:first-child {
-  margin-right: -20px;
-  z-index: 3;
-}
-.service__tabs-item:last-child {
-  margin-left: -20px;
   z-index: 1;
+  margin: 0 -10px;
 }
 .service__tabs-item:hover {
   border: 2px solid #fd3419;
@@ -1736,10 +1732,10 @@ body {
   width: 100%;
   background-color: #1b1b1b;
   text-align: center;
+  padding: 40px 0;
 }
 .page-footer p {
   margin: 0;
-  padding: 40px 0;
 }
 .callback {
   padding: 50px;
