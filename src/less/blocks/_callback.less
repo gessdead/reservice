@@ -43,17 +43,21 @@
         padding-bottom: 10px;
     }
 
-    input {
+    input,
+    textarea {
         padding: 5px;
         border: none;
         outline: 0;
         border-bottom: 2px solid @text-color;
+        min-width: 300px;
         .ease200();
+        resize: vertical;
 
         &:focus {
             border-bottom: 2px solid @text-color-active;
         }
     }
+
 }
 
 .callback__success {

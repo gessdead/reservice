@@ -12,6 +12,9 @@
                 label(for='email') Ваша почта
                 input(type='email' name='email' id='email')
             .callback__row
+                label(for='descr') Описание проблемы
+                textarea(type='text' name='descr' id='descr' maxlength='300' rows='3')
+            .callback__row
                 //button(type='submit').btn.j-form-btn Заказать звонок
                 a.btn.j-form-btn Заказать звонок
         .callback__success.j-form-success

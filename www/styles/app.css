@@ -1778,14 +1778,18 @@ body {
   text-align: left;
   padding-bottom: 10px;
 }
-.callback__row input {
+.callback__row input,
+.callback__row textarea {
   padding: 5px;
   border: none;
   outline: 0;
   border-bottom: 2px solid #676767;
+  min-width: 300px;
   transition: ease-in-out 0.2s;
+  resize: vertical;
 }
-.callback__row input:focus {
+.callback__row input:focus,
+.callback__row textarea:focus {
   border-bottom: 2px solid #ff4128;
 }
 .callback__success {
