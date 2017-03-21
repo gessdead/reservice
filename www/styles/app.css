@@ -1145,7 +1145,7 @@ img.mfp-img {
   left: 0;
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -1282,7 +1282,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/bg-figures.png');
+  background-image: url('/images/bg-figures.png');
   background-size: 150%;
   background-position: 56% 24%;
   background-repeat: no-repeat;
@@ -1328,7 +1328,7 @@ body {
   content: '';
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
   position: absolute;
 }
 .promo-block__title::before {
@@ -1388,7 +1388,7 @@ body {
   left: 0;
   width: 47px;
   height: 58px;
-  background-image: url('../images/slash.png');
+  background-image: url('/images/slash.png');
 }
 .page-content__text {
   font-size: 18px;
@@ -1432,15 +1432,8 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: ease-in-out 0.2s;
-  z-index: 2;
-}
-.service__tabs-item:first-child {
-  margin-right: -20px;
-  z-index: 3;
-}
-.service__tabs-item:last-child {
-  margin-left: -20px;
   z-index: 1;
+  margin: 0 -10px;
 }
 .service__tabs-item:hover {
   border: 2px solid #fd3419;
@@ -1517,7 +1510,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/bg-figures.png');
+  background-image: url('/images/bg-figures.png');
   background-size: cover;
   background-position: 56% 24%;
   background-repeat: repeat-x;

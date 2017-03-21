@@ -37,7 +37,7 @@ define('app', [
         require(['slick'], function () {
             $gallery.slick({
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 2
             });
         });
     })($('.j-gallery'));
