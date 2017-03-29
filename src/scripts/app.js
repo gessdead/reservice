@@ -142,9 +142,36 @@ define('app', [
             return;
         }
 
-        $form.on('click', function () {
-           $('.j-form').hide();
-           $('.j-form-success').show();
+        $('#callback').on('submit', function(e) {
+            e.preventDefault();
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var phone = $('#phone').val();
+            var descr = $('#descr').val();
+
+            //pretend we don't need validation
+
+            //send to formspree
+            $.ajax({
+                url:'https://formspree.io/s1991gv@gmail.com',
+                method:'POST',
+                data:{
+                    'Имя'               : name,
+                    'Телефон'           : phone,
+                    'Почта'             : email,
+                    'Описание проблемы' : descr,
+                    _subject            : 'Заявка с сайта re-service24.ru'
+                },
+
+                dataType: "json",
+
+                success:function() {
+                    $('.j-form').hide();
+                    $('.j-form-success').show();
+                }
+
+            });
+
         });
 
     })($('.j-form-btn'));

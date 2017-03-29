@@ -5,22 +5,23 @@
       <h2 class="callback__ttl">Заполните форму</h2>
       <div class="callback__row">
         <label for="name">Ваше имя</label>
-        <input type="text" name="name" id="name"/>
+        <input type="text" name="name" id="name" required="required"/>
       </div>
       <div class="callback__row">
         <label for="phone">Ваш телефон</label>
-        <input type="tel" name="phone" id="phone"/>
+        <input type="tel" name="phone" id="phone" required="required"/>
       </div>
       <div class="callback__row">
         <label for="email">Ваша почта</label>
-        <input type="email" name="email" id="email"/>
+        <input type="email" name="email" id="email" required="required"/>
       </div>
       <div class="callback__row">
         <label for="descr">Описание проблемы</label>
         <textarea type="text" name="descr" id="descr" maxlength="300" rows="3"></textarea>
       </div>
       <div class="callback__row">
-        <!--button(type='submit').btn.j-form-btn Заказать звонок--><a class="btn j-form-btn">Заказать звонок</a>
+        <button class="btn j-form-btn" type="submit">Заказать звонок</button>
+        <!--a.btn.j-form-btn Заказать звонок-->
       </div>
     </form>
     <div class="callback__success j-form-success">
